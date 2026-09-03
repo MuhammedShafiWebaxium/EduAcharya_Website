@@ -5,5 +5,13 @@ import { defineConfig } from 'vite'
 
 export default defineConfig({
   resolve: { tsconfigPaths: true },
-  plugins: [tailwindcss(), tanstackStart(), react()],
+  plugins: [
+    tailwindcss(),
+    tanstackStart({
+      prerender: {
+        enabled: true,
+      },
+    }),
+    react(),
+  ],
 })
