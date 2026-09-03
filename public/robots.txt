@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://eduacharyainstitution.in/sitemap.xml
+Sitemap: https://muhammedshafiwebaxium.github.io/EduAcharya_Website/sitemap.xml

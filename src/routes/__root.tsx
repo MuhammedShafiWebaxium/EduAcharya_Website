@@ -7,7 +7,7 @@ import {
 import type { ReactNode } from 'react'
 import appCss from '../styles.css?url'
 
-const siteUrl = 'https://eduacharyainstitution.in/'
+const siteUrl = 'https://muhammedshafiwebaxium.github.io/EduAcharya_Website/'
 
 export const Route = createRootRoute({
   head: () => ({
