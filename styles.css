@@ -16,9 +16,12 @@
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 body {
   margin: 0;
+  width: 100%;
+  overflow-x: clip;
   color: var(--ink);
   font-family: "DM Sans", sans-serif;
   font-size: 16px;
@@ -28,6 +31,7 @@ body {
 img {
   display: block;
   width: 100%;
+  max-width: 100%;
   height: auto;
 }
 a {
@@ -41,6 +45,7 @@ select {
 }
 .container {
   width: min(1160px, calc(100% - 40px));
+  min-width: 0;
   margin: auto;
 }
 .skip-link {
@@ -1221,7 +1226,22 @@ footer {
 }
 @media (max-width: 680px) {
   .container {
-    width: min(100% - 28px, 1160px);
+    width: calc(100% - 28px);
+    max-width: 1160px;
+  }
+  .nav-wrap > *,
+  .hero-grid > *,
+  .form-band-grid > *,
+  .story-grid > *,
+  .compact-form-grid > *,
+  .image-form-grid > *,
+  .courses-grid > *,
+  .quick-grid > *,
+  .faq-grid > *,
+  .apply-grid > *,
+  .contact-grid > *,
+  .two-forms-grid > * {
+    min-width: 0;
   }
   .topbar-inner {
     justify-content: center;
@@ -1236,6 +1256,12 @@ footer {
   .brand small {
     max-width: 190px;
   }
+  .brand {
+    min-width: 0;
+  }
+  .brand span {
+    min-width: 0;
+  }
   .primary-nav {
     top: 72px;
   }
@@ -1249,10 +1275,12 @@ footer {
     width: 100%;
   }
   .proof-row {
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
   .proof-row div {
     padding: 0 10px;
+    min-width: 0;
   }
   .proof-row b {
     font-size: 1.06rem;
