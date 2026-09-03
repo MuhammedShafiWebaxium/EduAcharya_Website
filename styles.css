@@ -142,6 +142,10 @@ select {
   padding: 10px 18px;
   border-radius: 8px;
 }
+.primary-nav .nav-cta:hover {
+  background: var(--orange-dark);
+  color: #fff;
+}
 .menu-toggle {
   display: none;
   border: 0;
@@ -202,7 +206,7 @@ h3 {
   margin-top: 0;
 }
 h1 {
-  font-size: clamp(2.4rem, 4.8vw, 4.5rem);
+  font-size: clamp(2.35rem, 3.5vw, 3.5rem);
   letter-spacing: -0.045em;
   margin: 0.35em 0 0.3em;
 }
